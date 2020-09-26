@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
               for (int i = 1; i <= 30; i++)
                 Card(
                     elevation: 5.0,
-                    color: Colors.redAccent,
+                    color: Colors.orange[50],
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
